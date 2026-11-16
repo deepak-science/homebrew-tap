@@ -2,17 +2,17 @@
 class Kest < Formula
   desc "Per-project wrapper for helm and terraform"
   homepage "https://github.com/deepak-science/kestrel"
-  url "https://github.com/deepak-science/kestrel/releases/download/v0.6.0/kest-darwin-arm64"
-  version "0.6.0"
-  sha256 "116e888b2f8866023bd0d1ba57aa4ccc05f9e37fc07d3a91a34520259fd09d68"
+  url "https://github.com/deepak-science/kestrel/releases/download/v0.7.0/kest-darwin-arm64"
+  version "0.7.0"
+  sha256 "7dccfba4e33077a6e270ced3c2b3e9e953a46dd9ea498a082a149172bf6204bc"
   license "Apache-2.0"
 
   depends_on arch: :arm64
   depends_on :macos
 
   resource "kestci" do
-    url "https://github.com/deepak-science/kestrel/releases/download/v0.6.0/kestci-darwin-arm64"
-    sha256 "4f122c7e4a6333237578c2e2934b66352557f57cea11a3b37db6aee0ca9d22c2"
+    url "https://github.com/deepak-science/kestrel/releases/download/v0.7.0/kestci-darwin-arm64"
+    sha256 "940445282edf092d014e002274a8d37e31143e35217d81efb7c9bb97294b2ec7"
   end
 
   def install
